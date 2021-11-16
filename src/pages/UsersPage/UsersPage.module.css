@@ -1,0 +1,35 @@
+.mainDivPage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3% 0 3%;
+    background-color: #EEF0F8;
+}
+
+header, main, usersSide, formSide {
+    display: flex;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+}
+
+main {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+usersSide {
+    height: 100%;
+    width: 64%;
+    background-color: #a3a3ab;
+}
+
+/*formCreate {*/
+/*    height: 100%;*/
+/*    width: 34%;*/
+/*    background-color: #FFFFFF;*/
+/*}*/

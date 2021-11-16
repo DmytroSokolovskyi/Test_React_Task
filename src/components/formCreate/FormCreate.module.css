@@ -1,0 +1,59 @@
+.formCreate,
+.contentDiv,
+.formHeader,
+.formInputs,
+.formFooter {
+    display: flex;
+}
+
+.formCreate {
+    height: 100%;
+    width: 34%;
+    background-color: #FFFFFF;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.contentDiv {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.formHeader {
+    align-items: end;
+    justify-content: space-between;
+    height: 8%;
+    width: 100%;
+}
+
+.closeDiv {
+    width: 24px;
+    height: 24px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAGKADAAQAAAABAAAAGAAAAADB/VeXAAABNUlEQVRIDe1TO7LCMAyUM0lDGm4CRwj1a96rqbgBnARuQEUNzasDN4Cb0JAmGYx2jMAYOTCUgItI0Wc3KzlE3/P2EzCawsXiv2+tndZ1/jcaDfZajcTm87KbZYelMWYyHP5sJS42Ece3xyPNiEyRZVUJAD/n+w68KlHrevys81WCpun8soIdl/RjJFdwgtodeu7hmVoLIgaAND2sWXqPX7d13RnIuO7B80JyIV6UIEaCOFSxOX95HBy1rQQoCJUgxucpcBQ+JEBRQEJu5u1fjj4cdckudfvkXViJ+L7EYvahgnChANIW/xJBCN40eQGg2O3SSKIKNHC5isFObq5wSKIStIELwLMk6pLTtFoxUOtVhBqMTP74c4/wX6xKkCQ0tpY2AJCxXDo850pCG/R4qa/7SRM4AUHx3RiPM+1KAAAAAElFTkSuQmCC');
+}
+
+.textDiv {
+    font-family: "Helvetica", serif;
+    font-size: 12px;
+    font-weight: 800;
+    color: #3F4254;
+    opacity: 1;
+}
+
+.formInputs {
+    flex: 1;
+    width: 100%;
+    /*background-color: #88f6d0;*/
+}
+
+.formFooterCreate {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
