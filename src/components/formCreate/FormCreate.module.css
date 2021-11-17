@@ -2,7 +2,8 @@
 .contentDiv,
 .formHeader,
 .formInputs,
-.formFooter {
+.formFooter,
+.formFooterEdit {
     display: flex;
 }
 
@@ -47,7 +48,6 @@
 .formInputs {
     flex: 1;
     width: 100%;
-    /*background-color: #88f6d0;*/
 }
 
 .formFooterCreate {
@@ -55,5 +55,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: start;
+}
+
+.formFooterEdit {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: start;
 }

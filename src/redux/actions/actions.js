@@ -1,25 +1,22 @@
-import {SET_AUTH, SET_CHAT, SET_CONTACT, SET_MSG, SET_STATE, SET_USER} from "./actionsType";
-
-export const createContact = (value) => {
-    return {type: SET_CONTACT, payload: value};
-};
-
-export const choseChat = (value) => {
-    return {type: SET_CHAT, payload: value};
-};
-
-export const setMsg = (value) => {
-    return {type: SET_MSG, payload: value};
-};
-
-export const setState = (value) => {
-    return {type: SET_STATE, payload: value};
-};
+import {DELETE_USER, SET_CHOSE_USER, SET_USER, SET_USERS, UPDATE_USER} from "./actionsType";
 
 export const setUser = (value) => {
     return {type: SET_USER, payload: value};
 };
 
-export const setAuth = (value) => {
-    return {type: SET_AUTH, payload: value};
+export const setUsers = (value) => {
+    return {type: SET_USERS, payload: value};
 };
+
+export const setChoseUser = (value) => {
+    return {type: SET_CHOSE_USER, payload: value};
+};
+
+export const deleteUser = (value) => {
+    return {type: DELETE_USER, payload: value};
+};
+
+export const updateUser = (value) => {
+    return {type: UPDATE_USER, payload: value};
+};
+

@@ -1,0 +1,22 @@
+.userDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    margin: 1px;
+    background-color: #F4F5F8;
+    min-height: 35px;
+}
+
+.userDiv div {
+    display: flex;
+    align-items: center;
+    width: 19%;
+    height: 100%;
+    text-align: start;
+    font-size: 10px;
+    font-family: Helvetica, serif;
+    color: #3F4254;
+    padding-left: 1%;
+}

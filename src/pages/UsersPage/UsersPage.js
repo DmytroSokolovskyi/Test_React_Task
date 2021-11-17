@@ -22,10 +22,7 @@ const {location: {pathname}} = history;
 
                 <Switch>
                     <Route exact={true} path={"/create"} component={FormCreate}/>
-                    {/*        <Route exact={true} path={"/edit/:id"} render={(props) => {*/}
-                    {/*            return <div>edit</div>*/}
-                    {/*            // <ChadSide {...props}/>;*/}
-                    {/*        }}/>*/}
+                    <Route exact={true} path={"/edit/:id"} component={FormCreate}/>
                 </Switch>
 
             </main>

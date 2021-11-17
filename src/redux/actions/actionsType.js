@@ -1,6 +1,5 @@
-export const SET_CONTACT = 'SET_CONTACT';
-export const SET_CHAT = 'SET_CHAT';
-export const SET_MSG = 'SET_MSG';
-export const SET_STATE = 'SET_STATE';
 export const SET_USER = 'SET_USER';
-export const SET_AUTH = 'SET_AUTH';
+export const SET_USERS = 'SET_USERS';
+export const SET_CHOSE_USER = 'SET_CHOSE_USER';
+export const DELETE_USER = 'DELETE_USER';
+export const UPDATE_USER = 'UPDATE_USER';

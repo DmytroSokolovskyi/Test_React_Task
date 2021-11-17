@@ -1,20 +1,33 @@
-import {setUser} from "../redux/actions";
-import {axiosInstance} from "./config";
-import {useFetch} from "../hooks";
+import {axiosInstance, userUrl} from "./config";
+import {deleteUser, setUser, setUsers, updateUser} from "../redux/actions";
 
 export const createNewUser = (user) => (dispatch) => {
-    axiosInstance.post('/users', user).then(data => console.log(data))
-
-
-
-    dispatch(setUser(user));
+    axiosInstance
+        .post(userUrl, user)
+        .then(value => dispatch(setUser(value.data)))
+        .catch(e => console.log(e))
 };
 
-// export const findChoseContact = (contacts, id) => (dispatch) => {
-//     dispatch(choseChat(contacts.find(item => item.id === id)));
-// };
-//
-// export const createMsg = (id, msg) => (dispatch) => {
-//     const userMsg = {sender: false, time: moment().format(), value: msg};
-//     dispatch(setMsg({id, userMsg}));
-// };
+export const getUsers = () => (dispatch) => {
+    axiosInstance
+        .get(userUrl)
+        .then(value => dispatch(setUsers(value.data)))
+        .catch(e => console.log(e))
+};
+
+export const deleteUserById = (id) => (dispatch) => {
+    axiosInstance.delete(userUrl + "/" + id)
+        .then(value => {
+            if (value.status === 204) {
+                dispatch(deleteUser(id))
+            }
+        })
+        .catch(e => console.log(e))
+};
+
+export const updateUserById = (user, id) => (dispatch) => {
+    axiosInstance.put(userUrl + "/" + id, user)
+        .then(value => dispatch(updateUser(value.data)))
+        .catch(e => console.log(e))
+};
+
